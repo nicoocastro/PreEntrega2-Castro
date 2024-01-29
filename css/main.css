@@ -1,0 +1,374 @@
+
+
+@charset "UTF-8";
+* {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* grilla */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header   header   header    header" "main     main     section   section" "main      main    section   section" "footer    footer    footer    footer";
+}
+header{
+  grid-area: header;
+}
+/* Encabezado */
+.background-navbar {
+  background-color: #f7f6f2;
+}
+
+.encabezado {
+  /*Color de fondo*/
+  background-color: #f7f6f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor-header {
+  background-image: url("../assets/portada-galeria.jpg");
+  height: 250px;
+}
+
+.contenedor-galeria {
+  background-image: url("../assets/portada-galeria.jpg");
+}
+
+.encabezado nav {
+  background-color: #f7f6f2;
+}
+
+.encabezado nav ul {
+  display: flex;
+  gap: 1em;
+}
+
+.encabezado nav ul li {
+  list-style: none;
+}
+
+.encabezado nav ul li a {
+  text-decoration: none;
+  color: #743a11;
+}
+
+.cont-logo {
+  width: 150px;
+}
+
+.cont-logo img {
+  width: 100%;
+}
+
+/*BS*/
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-k {
+  background-color: #743a11;
+  color: #ffffff;
+}
+
+.btn-k:hover {
+  border: 1px #a52a2a solid;
+}
+
+/* Main */
+.contenido-principal {
+  margin: 30px 0 50px;
+  grid-area: main;
+}
+
+.title {
+  font-weight: 400;
+  color: #38c4b2;
+  text-align: center;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 18rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  line-height: 36px;
+}
+
+.border {
+  border: 1px solid #000000;
+}
+
+/*Galeria*/
+.title-galeria {
+  letter-spacing: 7px;
+}
+
+.navbar-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Estilos para el contenido debajo del navbar */
+.texto-debajo-navbar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para cada div de preguntas y respuestas */
+.texto-debajo-navbar div {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las preguntas */
+.texto-debajo-navbar p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para las respuestas */
+.texto-debajo-navbar p:not(:first-child) {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*new in*/
+.newin {
+  grid-area: section;
+}
+
+.newin-cont {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newin-cont-img {
+  width: 50%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.newin-cont-img img {
+  width: 100%;
+}
+
+.newin-txt {
+  width: 50%;
+}
+
+/*CONTACTO*/
+.titulo-contacto {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contacto-main {
+  font-size: 18px;
+}
+
+#contacto-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contacto-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacto-section li {
+  margin-bottom: 10px;
+}
+
+#contacto-section strong {
+  font-weight: bold;
+}
+
+#contacto-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cf81b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#contacto-section a:hover {
+  background-color: #f7f6f2;
+}
+
+/*SOBRE NOSOTROS*/
+.sobre-nosotros {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.titulosn {
+  color: #FF4500;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.ubicacion-mapa {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff5733;
+  margin-top: 20px;
+}
+
+/* Estilos para el mapa */
+.mapa {
+  margin-top: 20px;
+}
+
+/*Galeria*/
+.title-galeria {
+  letter-spacing: 7px;
+}
+
+.navbar-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Estilos para el contenido debajo del navbar */
+.texto-debajo-navbar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para cada div de preguntas y respuestas */
+.texto-debajo-navbar div {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las preguntas */
+.texto-debajo-navbar p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para las respuestas */
+.texto-debajo-navbar p:not(:first-child) {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*new in*/
+.newin {
+  grid-area: section;
+}
+
+.newin-cont {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newin-cont-img {
+  width: 50%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.newin-cont-img img {
+  width: 100%;
+}
+
+.newin-txt {
+  width: 50%;
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
+  background-color: #fbefe5;
+}
+
+footer img {
+  /*Tamaño del logo en footer*/
+  width: 100px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #f5f5dc;
+  color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilos para los enlaces en el footer cuando se pasan por encima */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para las imágenes en el footer */
+footer img {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    background-color: #f7f6f2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; /* Ajusta las filas según el contenido */
+    grid-template-areas: "header" "section" "main" "footer";
+  }
+  /* Ajustes de espacio entre elementos */
+  .navbar-nav {
+    margin: 0; /* Elimina el margen en la lista del menú */
+  }
+  .card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las tarjetas en la sección principal */
+  }
+  .card {
+    width: calc(50% - 5px); /* Ajusta el ancho de las tarjetas */
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+  }
+  .newin-cont {
+    margin-bottom: 10px; /* Espacio entre los artículos de la sección 'Más vendidos' */
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

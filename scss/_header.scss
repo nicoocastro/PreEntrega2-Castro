@@ -1,0 +1,54 @@
+header{
+    grid-area: header;
+}
+/* Encabezado */
+.background-navbar{
+    background-color:  #f7f6f2;
+}
+.encabezado{
+    /*Color de fondo*/
+    background-color:  #f7f6f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-header{
+    background-image: url('../assets/portada-galeria.jpg');
+    height: 250px;
+}
+.contenedor-galeria{
+    background-image: url('../assets/portada-galeria.jpg');
+}
+.encabezado nav{
+    background-color: #f7f6f2;
+}
+.encabezado nav ul{
+    display: flex;
+    gap: 1em;
+}
+.encabezado nav ul li{
+    list-style: none;
+}
+.encabezado nav ul li a{
+    text-decoration: none;
+    color: #743a11;
+}
+
+.cont-logo{
+    width: 150px;
+}
+
+.cont-logo img{
+    width: 100%;
+}
+        /*BS*/
+        .navbar-toggler:focus{
+            box-shadow: none;
+        }
+        .btn-k{
+            background-color: #743a11;
+            color: #ffffff;
+        }
+        .btn-k:hover{
+            border: 1px #a52a2a solid;
+        }

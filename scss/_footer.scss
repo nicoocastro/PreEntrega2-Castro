@@ -1,0 +1,37 @@
+/*footer*/
+footer{
+    grid-area: footer;
+    background-color:  #fbefe5;
+}
+
+footer img{
+    /*Tamaño del logo en footer*/
+    width: 100px;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #f5f5dc; 
+    color: #000; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+/* Estilos para los enlaces en el footer cuando se pasan por encima */
+footer a:hover {
+    text-decoration: underline; 
+}
+
+/* Estilos para las imágenes en el footer */
+footer img {
+    margin-right: 10px; 
+}

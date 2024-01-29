@@ -1,0 +1,28 @@
+@media (max-width: 480px) {
+    .grid-container {
+        background-color: #f7f6f2;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /* Ajusta las filas según el contenido */
+        grid-template-areas: "header" "section" "main" "footer";
+    }
+
+    /* Ajustes de espacio entre elementos */
+    .navbar-nav {
+        margin: 0; /* Elimina el margen en la lista del menú */
+    }
+
+    .card-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre las tarjetas en la sección principal */
+    }
+
+    .card {
+        width: calc(50% - 5px); /* Ajusta el ancho de las tarjetas */
+        margin-bottom: 10px; /* Espacio entre las tarjetas */
+    }
+
+    .newin-cont {
+        margin-bottom: 10px; /* Espacio entre los artículos de la sección 'Más vendidos' */
+    }
+}
