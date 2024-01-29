@@ -1,54 +1,61 @@
-header{
+// _header.scss
+
+header {
     grid-area: header;
-}
-/* Encabezado */
-.background-navbar{
-    background-color:  #f7f6f2;
-}
-.encabezado{
-    /*Color de fondo*/
-    background-color:  #f7f6f2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.contenedor-header{
-    background-image: url('../assets/portada-galeria.jpg');
-    height: 250px;
-}
-.contenedor-galeria{
-    background-image: url('../assets/portada-galeria.jpg');
-}
-.encabezado nav{
-    background-color: #f7f6f2;
-}
-.encabezado nav ul{
-    display: flex;
-    gap: 1em;
-}
-.encabezado nav ul li{
-    list-style: none;
-}
-.encabezado nav ul li a{
-    text-decoration: none;
-    color: #743a11;
-}
+    background-color: $background-color;
 
-.cont-logo{
-    width: 150px;
-}
+    .background-navbar {
+        background-color: $background-color;
+    }
 
-.cont-logo img{
-    width: 100%;
+    .encabezado {
+        @include flex-center;
+        justify-content: space-between;
+        padding: 10px 20px; // Agregamos espaciado interno al encabezado
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Agregamos una sombra suave
+    }
+
+    .contenedor-header {
+        background-image: $background-image;
+        height: 250px;
+        background-size: cover; // Ajustamos el tamaño del fondo para cubrir completamente el contenedor
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 1em;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    padding: 10px; // Agregamos espaciado interno al enlace
+                    transition: color 0.3s ease; // Agregamos una transición suave al color del texto al pasar el mouse sobre el enlace
+
+                    &:hover {
+                        color: darken($primary-color, 10%); // Hacemos que el color del texto se oscurezca ligeramente al pasar el mouse
+                    }
+                }
+            }
+        }
+    }
+
+    .cont-logo {
+        width: 150px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto; // Permitimos que la altura se ajuste automáticamente para mantener la proporción
+        }
+    }
 }
-        /*BS*/
-        .navbar-toggler:focus{
-            box-shadow: none;
-        }
-        .btn-k{
-            background-color: #743a11;
-            color: #ffffff;
-        }
-        .btn-k:hover{
-            border: 1px #a52a2a solid;
-        }

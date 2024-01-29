@@ -5,3 +5,29 @@
 
 
 //Sin parámetros (Creo el código una vez y reutilizar muchas veces)
+
+//header
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//principal
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//footer
+
+// Mixin para centrar elementos horizontal y verticalmente
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

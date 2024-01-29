@@ -1,0 +1,13 @@
+// bootstrap.scss
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-k {
+    background-color: $primary-color;
+    color: #ffffff;
+
+    &:hover {
+        border: 1px solid darken($primary-color, 10%);
+    }
+}
