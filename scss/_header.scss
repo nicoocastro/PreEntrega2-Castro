@@ -59,3 +59,77 @@ header {
         }
     }
 }
+
+/* Estilos para el encabezado de la página de preguntas frecuentes */
+.encabezadofaq {
+    background-color: #f8d3cf; /* Color de fondo del encabezado */
+    padding: 20px 0; /* Espaciado interno del encabezado */
+}
+
+.containerfaq {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.navbar {
+    padding: 0; /* Eliminar el relleno predeterminado de la barra de navegación */
+}
+
+.navbar-nav {
+    margin: 0; /* Eliminar el margen predeterminado de la lista de navegación */
+    display: flex; /* Usar flexbox para alinear los elementos en la misma línea */
+    align-items: center; /* Alinear verticalmente los elementos en el centro */
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Color del texto de los enlaces de navegación (negro) */
+    padding: 10px 15px; /* Espaciado interno de los enlaces de navegación */
+    font-size: 20px; /* Tamaño del texto de los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Cambiar el color del texto al pasar el ratón sobre los enlaces de navegación */
+    background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo al pasar el ratón sobre los enlaces de navegación */
+    border-radius: 5px; /* Agregar bordes redondeados a los enlaces de navegación */
+}
+
+.navbar-logo {
+    width: 100px; /* Ancho de la imagen del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.cont-img {
+    text-align: right; /* Alinear la imagen del logo a la derecha */
+}
+
+// CONTACTO
+// Estilos para el encabezado de la fila
+.row-encabezado {
+    background-color: #f8d3cf; // Color de fondo del encabezado
+    padding: 10px 0; // Espaciado interno del encabezado
+}
+
+.background-navbar {
+    background-color: transparent !important; // Fondo transparente para la barra de navegación
+    padding: 0; // Eliminar el relleno predeterminado de la barra de navegación
+}
+
+.cont-img {
+    text-align: center; // Alinear la imagen del logo al centro
+    margin-top: 10px; // Espaciado superior
+}
+
+.navbar-nav .nav-link {
+    color: #000; // Color del texto de los enlaces de navegación (negro)
+    padding: 10px 15px; // Espaciado interno de los enlaces de navegación
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; // Cambiar el color del texto al pasar el ratón sobre los enlaces de navegación
+    background-color: rgba(255, 255, 255, 0.2); // Cambiar el color de fondo al pasar el ratón sobre los enlaces de navegación
+    border-radius: 5px; // Agregar bordes redondeados a los enlaces de navegación
+}
+
+.navbar-toggler-icon {
+    background-color: #000; // Color del ícono del botón del menú
+}

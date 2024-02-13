@@ -11,12 +11,17 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "header   header   header    header" "main     main     section   section" "main      main    section   section" "footer    footer    footer    footer";
+  grid-template-rows: auto 1fr 1fr; /* Ajustamos las filas */
+  grid-template-areas: 
+    "header   header   header    header"
+    "main     main     section   section"
+    "main     main     section   section"
+    "footer   footer   footer    footer";
 }
-header{
+header {
   grid-area: header;
 }
+
 /* Encabezado */
 .background-navbar {
   background-color: #f7f6f2;
@@ -68,6 +73,7 @@ header{
 /*BS*/
 .navbar-toggler:focus {
   box-shadow: none;
+  background-color: transparent;
 }
 
 .btn-k {
@@ -87,7 +93,7 @@ header{
 
 .title {
   font-weight: 400;
-  color: #38c4b2;
+  color: #2b0433;
   text-align: center;
 }
 
@@ -123,7 +129,82 @@ header{
   border: 1px solid #000000;
 }
 
+/*FAQ*/
+/*HEADER FAQ*/
+/* Estilos para el encabezado de la página de preguntas frecuentes */
+.encabezadofaq {
+  background-color: #f7f6f2; /* Color de fondo del encabezado */
+  padding: 20px 0; /* Espaciado interno del encabezado */
+}
+.background-navbar{
+  background-color: #f8d3cf;
+}
+.containerfaq {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.navbar {
+  padding: 0; /* Eliminar el relleno predeterminado de la barra de navegación */
+}
+
+.navbar-nav {
+  margin: 0; /* Eliminar el margen predeterminado de la lista de navegación */
+  display: flex; /* Usar flexbox para alinear los elementos en la misma línea */
+  align-items: center; /* Alinear verticalmente los elementos en el centro */
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Color del texto de los enlaces de navegación (negro) */
+  padding: 10px 15px; /* Espaciado interno de los enlaces de navegación */
+  font-size: 20px; /* Tamaño del texto de los enlaces */
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #f8d3cf; /* Cambiar el color del texto al pasar el ratón sobre los enlaces de navegación */
+  background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo al pasar el ratón sobre los enlaces de navegación */
+  border-radius: 5px; /* Agregar bordes redondeados a los enlaces de navegación */
+}
+
+.navbar-logo {
+  width: 100px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.cont-img {
+  text-align: right; /* Alinear la imagen del logo a la derecha */
+}
+
+/*MAIN FAQ*/
+/* Estilos para el contenido de las preguntas frecuentes */
+.faqmain {
+  padding: 50px 0; /* Espacio alrededor del contenido */
+}
+
+.faqmain h1 {
+  font-size: 2.5rem; /* Tamaño de fuente del título principal */
+  text-align: center; /* Centrar el título principal */
+}
+
+.faqmain h2 {
+  font-size: 1.8rem; /* Tamaño de fuente del subtítulo */
+  text-align: center; /* Centrar el subtítulo */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.faqmain .faq-item {
+  margin-bottom: 30px; /* Espacio inferior entre preguntas y respuestas */
+}
+
+.faqmain .question {
+  font-size: 1.4rem; /* Tamaño de fuente del texto de las preguntas */
+  font-weight: bold; /* Preguntas en negrita */
+  margin-bottom: 10px; /* Espacio inferior entre preguntas y respuestas */
+}
+
 /*Galeria*/
+
 .title-galeria {
   letter-spacing: 7px;
 }
@@ -233,7 +314,7 @@ header{
 }
 
 .titulosn {
-  color: #FF4500;
+  color: #2b0433;
   font-size: 2em;
   margin-bottom: 15px;
 }
@@ -241,7 +322,7 @@ header{
 .ubicacion-mapa {
   font-size: 1.5em;
   font-weight: bold;
-  color: #ff5733;
+  color: #2b0433;
   margin-top: 20px;
 }
 
@@ -309,6 +390,37 @@ header{
   width: 50%;
 }
 
+/*CONTACTO*/
+/* Estilos para el encabezado de la fila */
+.row-encabezado {
+  background-color: #ffffff; /* Color de fondo del encabezado */
+  padding: 10px 0; /* Espaciado interno del encabezado */
+}
+
+.background-navbar {
+  background-color: transparent !important; /* Fondo transparente para la barra de navegación */
+  padding: 0; /* Eliminar el relleno predeterminado de la barra de navegación */
+}
+
+.cont-img {
+  text-align: center; /* Alinear la imagen del logo al centro */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Color del texto de los enlaces de navegación (negro) */
+  padding: 10px 15px; /* Espaciado interno de los enlaces de navegación */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Cambiar el color del texto al pasar el ratón sobre los enlaces de navegación */
+  background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo al pasar el ratón sobre los enlaces de navegación */
+  border-radius: 5px; /* Agregar bordes redondeados a los enlaces de navegación */
+}
+
+.navbar-toggler-icon {
+  background-color: #000; /* Color del ícono del botón del menú */
+}
 /*footer*/
 footer {
   grid-area: footer;

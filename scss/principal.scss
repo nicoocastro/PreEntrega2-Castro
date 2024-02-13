@@ -159,3 +159,29 @@
         margin-top: 20px;
     }
 }
+
+/* Estilos para el contenido de las preguntas frecuentes */
+.faqmain {
+    padding: 50px 0; /* Espacio alrededor del contenido */
+}
+
+.faqmain h1 {
+    font-size: 2.5rem; /* Tamaño de fuente del título principal */
+    text-align: center; /* Centrar el título principal */
+}
+
+.faqmain h2 {
+    font-size: 1.8rem; /* Tamaño de fuente del subtítulo */
+    text-align: center; /* Centrar el subtítulo */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.faqmain .faq-item {
+    margin-bottom: 30px; /* Espacio inferior entre preguntas y respuestas */
+}
+
+.faqmain .question {
+    font-size: 1.4rem; /* Tamaño de fuente del texto de las preguntas */
+    font-weight: bold; /* Preguntas en negrita */
+    margin-bottom: 10px; /* Espacio inferior entre preguntas y respuestas */
+}
