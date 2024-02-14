@@ -244,24 +244,23 @@ header {
 
 .newin-cont {
   display: flex;
-  padding-top: 30px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px; /* Espacio entre cada artículo */
 }
 
 .newin-cont-img {
-  width: 50%;
-  height: 290px;
-  overflow: hidden;
-}
-
-.newin-cont-img img {
-  width: 100%;
+  width: 100%; /* Ajusta el ancho de la imagen para que se adapte al contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  margin-bottom: 10px; /* Ajusta el espacio entre la imagen y el texto */
 }
 
 .newin-txt {
-  width: 50%;
+  text-align: center; /* Alinea el texto al centro */
 }
+
+
+
 
 /*CONTACTO*/
 .titulo-contacto {
@@ -482,5 +481,34 @@ footer img {
     margin-bottom: 10px; /* Espacio entre los artículos de la sección 'Más vendidos' */
   }
 }
-
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 768px) {
+  /* Para dispositivos con un ancho máximo de 768px, como dispositivos móviles */
+  .grid-container {
+    display: flex;
+    flex-direction: column; /* Apilar los elementos uno encima del otro */
+  }
+
+  .contenido-principal {
+    order: 1; /* Cambia el orden de aparición en la pila, será primero */
+  }
+
+  .newin {
+    order: 2; /* Cambia el orden de aparición en la pila, será segundo */
+  }
+  /* Nuevas reglas para ajustar la sección "newin" en dispositivos móviles */
+  .newin-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newin-cont-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+/* Otras reglas CSS para dispositivos de escritorio */
